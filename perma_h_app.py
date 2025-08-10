@@ -1,6 +1,8 @@
 import streamlit as st
 import numpy as np
 import pandas as pd
+import matplotlib
+matplotlib.use("Agg")
 import matplotlib.pyplot as plt
 
 st.set_page_config(page_title="PERMA-H Radar", page_icon="📊", layout="wide")
@@ -74,9 +76,6 @@ with st.sidebar:
 # --- Compute category averages ---
 def avg(qs): 
     return float(np.mean([answers[q] for q in qs]))
-
-category_names = list(sections.keys())
-category_scores = [avg(sections[name]) for name in category_names]
 
 # Ensure clockwise PERMA-H order starting at top
 category_names = [
