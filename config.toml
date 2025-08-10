@@ -1,0 +1,7 @@
+# .streamlit/config.toml
+[theme]
+primaryColor = "#0099B8"      # BRAND_ACCENT
+backgroundColor = "#FFFFFF"
+secondaryBackgroundColor = "#E9F4F9"  # BRAND_LIGHT
+textColor = "#0B3D61"         # BRAND_PRIMARY
+font = "sans serif"
