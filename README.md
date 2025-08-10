@@ -13,3 +13,8 @@ streamlit
 matplotlib
 numpy
 pandas
+
+## Run locally
+```bash
+pip install -r requirements.txt
+streamlit run perma_h_app.py
